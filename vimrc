@@ -26,7 +26,8 @@ set number
 highlight LineNr ctermfg=grey
 nnoremap <CR> :nohlsearch<CR>/<BS>
 
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
+; Make any text >=80 characters the same color as comments
+highlight OverLength ctermfg=gray
 match OverLength /\%>80v.\+/
 
 set foldmethod=syntax
