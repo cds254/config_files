@@ -26,8 +26,8 @@ set number
 highlight LineNr ctermfg=grey
 nnoremap <CR> :nohlsearch<CR>/<BS>
 
-highlight OverLength ctermbg=darkred ctermfg=white guibg=#FFD9D9
-match OverLength /\%>80v.\+/
+set colorcolumn=80
+highlight ColorColumn ctermbg=darkgray
 
 set foldmethod=syntax
 set foldlevel=99
